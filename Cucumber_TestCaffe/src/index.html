@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Document</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         background-color: #f0f0f0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+      }
+   
+      #registroForm {
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         text-align: center;
+         width: 300px;
+      }
+   
+      label {
+         display: block;
+         margin-bottom: 15px;
+         text-align: left;
+      }
+      .box {
+         margin: 20px 10px;
+      }
+      input {
+         width: 100%;
+         padding: 8px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         box-sizing: border-box;
+         margin-top: 5px;
+      }
+   
+      button {
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+         margin-top: 15px;
+      }
+   
+      button:hover {
+         background-color: #0056b3;
+      }
+   </style>
+</head>
+<body>
+   <div id="registroForm">
+      <h1 id="titulo">Registrar Usuario</h1>
+      <form>
+         <div class="box">
+            <label for="nombreInput">Nombre Completo</label>
+            <input id="nombreInput" type="text" required>
+         </div>
+         <div  class="box">
+            <label for="emailInput">Correo Electronico</label>
+            <input id="emailInput" type="email" required>
+         </div>
+         <div  class="box">
+            <label for="ciInput">Carnet de Identidad</label>
+            <input id="ciInput" type="text" required>
+         </div>
+         <div  class="box">
+            <label for="passwordInput">Contraseña</label>
+            <input id="passwordInput" type="password" required>
+         </div>
+         <button type="submit" id="submitBoton">Registrar</button>
+      </form>
+   </div>
+   
+</body>
+   
+</html>
